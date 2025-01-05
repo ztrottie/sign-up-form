@@ -4,22 +4,62 @@
 	font-display: swap;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .main {
 	background-color: rgb(34, 32, 32);
 	display: flex;
 	justify-content: center;
+	height: 100vh;
+	width: 100vw;
 }
 
 .leftSection {
-	width: 40vw;
-	height: 100vh;
+	width: 40%;
+	height: 100%;
 	background-image: url("../img/leafs_background.jpg");
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.creditBackground {
+	text-align: center;
+	margin-top: auto;
+}
+
+.creditBackground>p>a {
+	color: white;
+}
+
+.logoHeader {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 30%;
+}
+
+.logoHeader h1 {
+	text-align: center;
+	font-size: 6rem;
 }
 
 .rightSection {
-	width: 60vh;
-	height: 100vh;
+	width: 60%;
+	height: 100%;
+	background-color: white;
+}
+
+.intro h2 {
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .logoHeader {
@@ -34,11 +74,6 @@
 	width: 100px;
 	height: auto;
 }
-
-/* .leftSection img {
-	width: 100%;
-	height: 100%;
-} */
 
 .creditBackground {
 	color: white;
