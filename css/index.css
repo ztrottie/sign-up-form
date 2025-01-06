@@ -4,8 +4,6 @@
 	font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 .main {
 	background-color: rgb(34, 32, 32);
 	display: flex;
@@ -53,13 +51,60 @@
 	width: 60%;
 	height: 100%;
 	background-color: white;
+	display: flex;
+	flex-direction: column;
+	min-width: 400px;
+}
+
+.intro {
+	margin-top: 20%;
+	
+}
+
+.info{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.info label {
+	font-size: 1rem;
+}
+
+.info input {
+	font-size: clamp(1rem, 0.75 + 1.5vw, 2rem);
+	height: calc(1rem * 1.5);
+	width: 20ch;
+}
+
+.input-div label {
+	width: 25ch;
+	margin-right: 5px;
+}
+
+.input-div {
+	text-align: right;
+	display: flex;
+	min-width: 50%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#grayBackground {
+	background-color: gray;
+}
+
+.submitButton {
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 .intro h2 {
-	font-size: 1rem;
-	line-height: 1rem;
-	font-weight: bold;
-	font-family: 'Courier New', Courier, monospace;
+	font-size: clamp(1.5rem, 0.75rem + 1.5vw, 2rem);
+	line-height: 1.5;
+	max-inline-size: 66ch;
+	font-family: 'Roboto', 'Courier New', Courier, monospace;
 }
 
 .logoHeader {
